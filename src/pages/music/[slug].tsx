@@ -30,30 +30,30 @@ const BlogPost: NextPage<BlogPostProps> = ({ data }) => {
         <span className='text-sm md:text-base'>  {data.author_name}</span>
         </h1>
       </section>
-      <section className='flex'>
+      <section>
         {puzis
           .map((puzi) => (
-            <div className='flex-1' key={puzi}
+            <div key={puzi}
             >
               <CustomImage
                 src={puzi ?? '/static/default-thumbnail.jpg'}
                 alt='music'
                 display='intrinsic'
-                width={2000}
-                height={2000}
+                width={560}
+                height={800}
                 objectFit='scale-down'
                 className='rounded'
               />
             </div>
           ))}
+      </section>
       {data.viedeo_url && (
-        <div className="flex-none">
-          <video controls loop style={{ width: '300px', height: 'auto' }}>
+        <div className="puzi-video">
+          <video controls loop style={{ width: '500px', height: 'auto' }}>
             <source src={data.viedeo_url} />
           </video>
         </div>
       )}
-      </section>
     </Layout>
   )
 }
