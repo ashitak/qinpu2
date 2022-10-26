@@ -39,8 +39,8 @@ const BlogPost: NextPage<BlogPostProps> = ({ data }) => {
                 src={puzi ?? '/static/default-thumbnail.jpg'}
                 alt='music'
                 display='intrinsic'
-                width={560}
-                height={800}
+                width={500}
+                height={700}
                 objectFit='scale-down'
                 className='rounded'
               />
@@ -49,7 +49,7 @@ const BlogPost: NextPage<BlogPostProps> = ({ data }) => {
       </section>
       {data.viedeo_url && (
         <div className="puzi-video">
-          <video controls loop style={{ width: '500px', height: 'auto' }}>
+          <video controls loop style={{ width: '300px', height: 'auto' }}>
             <source src={data.viedeo_url} />
           </video>
         </div>

@@ -10,7 +10,7 @@
 .puzi-video {
     position: fixed;
     top: 10rem;
-    right: 20rem;
+    right: 10rem;
 }
 @media (min-width: 768px) {
     .layout {
