@@ -1,0 +1,15 @@
+.music-video {
+    position: absolute;
+    right: 10rem;
+    top: 0;
+}
+.music-puzis {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .layout {
+        max-width: 80rem;
+    }
+}

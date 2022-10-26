@@ -11,5 +11,16 @@ declare module 'next-starter-blog' {
     tags: Array<string>
     keywords: Array<string>
     slug: string
+  };
+  export type Music = {
+    title: string
+    published: string
+    puzis: Array<string>
+    viedeo_url?: string
+    author_name: string
+    producer_name?: string
+    source_url: string
+    tags: Array<string>
+    slug: string
   }
 }
