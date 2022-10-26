@@ -17,6 +17,7 @@ const Header = () => {
 
       <section className={twclsx('layout', 'flex items-center justify-between', 'h-full -mt-1.5')}>
         <Nav />
+        <div>张佳祎你最棒！&#128175;&#128175;&#128150;&#128150;</div>
         <DrawerToggler />
         <DarkMode />
       </section>
